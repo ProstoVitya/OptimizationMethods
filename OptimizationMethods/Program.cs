@@ -19,7 +19,7 @@ namespace OptimizationMethods
             int count = 0;
             while (Math.Abs(a - b) > precision)
             {
-                count+=2;
+                count += 2;
                 double x = (a + b) / 2;
                 double F1 = f(x - epsilon / 2);
                 double F2 = f(x + epsilon / 2);
@@ -65,7 +65,7 @@ namespace OptimizationMethods
             double y1 = f(x1);
             double y2 = f(x2);
             for (int i = 0; i < n; i++)
-            {  
+            {
                 if (y1 > y2)
                 {
                     a = x1;
