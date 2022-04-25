@@ -65,8 +65,8 @@ namespace SecondLab
             return x;
         }
 
-        public static double[] NewtonDescent(Func<double[], double> f,
-            Func<double[], double[]> gradF, Func<double[], double[,]> h, double[] x, double epsilon)
+        public static double[] NewtonDescent(Func<double[], double[]> gradF,
+            Func<double[], double[,]> h, double[] x, double epsilon)
         {
             bool isDone = false;
             int iterations = 0;

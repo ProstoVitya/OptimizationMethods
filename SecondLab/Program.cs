@@ -15,7 +15,7 @@ namespace SecondLab
             var ans2 = Descent.GradientDescent(Functions.Fxy, Functions.GradFxy, x, step, epsilon);
             Console.WriteLine($"{ans2[0]} {ans2[1]}\n");
 
-            var ans3 = Descent.NewtonDescent(Functions.Fxy, Functions.GradFxy, Functions.Hmatrix, x, epsilon);
+            var ans3 = Descent.NewtonDescent(Functions.GradFxy, Functions.Hmatrix, x, epsilon);
             Console.WriteLine($"{ans3[0]} {ans3[1]}\n");
         }
     }
